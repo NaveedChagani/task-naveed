@@ -1,0 +1,70 @@
+* {
+    margin: 0px;
+    padding: auto;
+    font-weight: bold;
+}
+
+header h1 {
+    text-align: center;
+    background-color: lightgray;
+    height: 50px;
+}
+
+main {
+    margin-left: 50px;
+}
+
+.heading-2 {
+    height: 30px;
+    margin-bottom: 30px;
+}
+
+.form-control {
+    width: 45%;
+    
+}
+
+.inline-block {
+    display: inline-block;
+    width: 49%;
+}
+
+#due-date{
+    margin-left: 200px;
+    
+}
+
+#label-date {
+    padding-left: 200px;
+}
+
+#assigned-to {
+    width: 92%;
+}
+
+button {
+    background-color: black;
+    color: white;
+    width: 400px;
+    margin-top: 20px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+.card {
+    width: 450px;
+    margin-top: 15px;
+}
+
+.card-body {
+    border: black;
+    margin-bottom: 10px;
+    
+}
+
+
+
+
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Task</title>
+</head>
+<body>
+    <header> <!--It contains the heading "Task List only"-->
+        <h1>Task List</h1>
+    </header>
+    <main class="main"> <!--It contains the rest of the document including sub-heading, 
+        task name, description, assigned to, date add button and 
+        task cards-->
+        
+        <div class="heading-2"> <!--It contains the Add new task sub heading only-->
+            <h2>Add New Task</h2>           
+        </div>
+
+        <form id="task-form"> <!--It contains the input data 1) Task Name, 
+            2) Task description 3) Assigned to, 4) Due Date-->
+
+            <div> <!--It contains 1) Task Name + 2) Task Decription-->
+
+                <div class="mb-3">
+                    <label for="task-name" class="form-label">Task Name</label>
+                    <input type="text" class="form-control" id="task-name">
+                </div>
+                <div class="mb-3">
+                    <label for="task-description" class="form-label">Task Description</label>
+                    <textarea class="form-control" id="task-description" rows="3"></textarea>
+                </div>
+            </div>
+
+            <div> <!--It contains 3) Assigned to + 4) Due Date-->
+
+                <div class="inline-block">
+                    <label for="assigned-to" class="form-label">Assigned To:</label>
+                    <input type="text" class="form-control" id="assigned-to">
+                </div>
+                <div class="inline-block" id="date">
+                    <label for="due-date" class="form-label" id="label-date">Due Date</label>
+                    <input type="date" class="form-control" id="due-date">
+                </div>
+
+            </div>
+
+            <div> <!--Contains the Add Task Button-->
+                <button type="submit" class="btn btn-dark" >Add Task</button>
+                
+            </div>
+
+        </form>
+
+        <div>
+            <h2>Tasks</h2>
+        </div>
+        
+        <div> <!--card body -- contains all the add task cards-->
+            <div class="card" id="displaytasks">
+                
+            <div class="card-body">
+                  <p id="card1-name">Task Name</p>
+                  <p id="task1-description">Task Description</p>
+                  <p id="task1-assigneddto">Assigned To</p>
+                  <p id="task1-dueddate">Due Date</p>
+                  <button type="button" class="btn btn-success">Done</button>
+                  <button type="button" class="btn btn-primary">In-Progress</button>
+                </div>
+                
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                  <p id="card2-name">Task Name</p>
+                  <p id="task2-description">Task Description</p>
+                  <p id="task2-assigneddto">Assigned To</p>
+                  <p id="task2-dueddate">Due Date</p>
+                  <button type="button" class="btn btn-success">Done</button>
+                  <button type="button" class="btn btn-primary">In-Progress</button>
+                </div>
+
+
+
+                
+                
+            </div>
+            
+
+
+        </div>
+
+    </main>
+    
+</body>
+
+</html>
